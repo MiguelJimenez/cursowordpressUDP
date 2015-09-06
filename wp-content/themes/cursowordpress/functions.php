@@ -58,7 +58,7 @@ register_nav_menus(array(
 	'primary'	=> __( 'Primary Menu', 'unodepiera' )
 ) );
 
-// Registro de Widgets
+// Registro de Widgets 
 if (!function_exists('unodepiera_add_widgets_footer'))
 {
 	function unodepiera_add_widgets_footer()
@@ -103,4 +103,24 @@ if (!function_exists('unodepiera_add_widgets_footer'))
 			)); 
 	}
 	add_action( 'widgets_init', 'unodepiera_add_widgets_footer');
+}
+
+// Registro Sidebar
+if (!function_exists('unodepiera_add_sidebar'))
+{
+	function unodepiera_add_sidebar()
+	{
+		register_sidebar( array(
+				'name'          => __( 'Main Sidebar', 'unodepiera' ),
+				'id'            => 'sidebar-frontal',
+				'description'   => __( 'Sidebar para la página principal', 'unodepiera' ),
+				'class'         => '',
+				'before_widget' => '<div id="%1" class="widget %2">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h2 class="widgettitle">',
+				'after_title'   => '</h2>'
+			)); 
+
+	}
+	add_action( 'widgets_init', 'unodepiera_add_sidebar');
 }
