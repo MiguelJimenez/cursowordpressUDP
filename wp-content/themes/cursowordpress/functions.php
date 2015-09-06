@@ -57,3 +57,50 @@ require_once('navwalker/wp_bootstrap_navwalker.php');
 register_nav_menus(array(
 	'primary'	=> __( 'Primary Menu', 'unodepiera' )
 ) );
+
+// Registro de Widgets
+if (!function_exists('unodepiera_add_widgets_footer'))
+{
+	function unodepiera_add_widgets_footer()
+	{
+		   /**
+			* Creates a sidebar
+			* @param string|array  Builds Sidebar based off of 'name' and 'id' values.
+			*/
+			$args = array(
+				'name'          => __( 'Footer Left', 'unodepiera' ),
+				'id'            => 'sidebar-footer-left',
+				'description'   => __( 'Widgets para el footer', 'unodepiera' ),
+				'class'         => '',
+				'before_widget' => '<li id="%1" class="widget %2">',
+				'after_widget'  => '</li>',
+				'before_title'  => '<h2 class="widgettitle">',
+				'after_title'   => '</h2>'
+			);
+		
+			register_sidebar( $args );
+		
+			register_sidebar( array(
+				'name'          => __( 'Footer Center', 'unodepiera' ),
+				'id'            => 'sidebar-footer-center',
+				'description'   => __( 'Widgets para el footer', 'unodepiera' ),
+				'class'         => '',
+				'before_widget' => '<li id="%1" class="widget %2">',
+				'after_widget'  => '</li>',
+				'before_title'  => '<h2 class="widgettitle">',
+				'after_title'   => '</h2>'
+			)); 
+
+			register_sidebar( array(
+				'name'          => __( 'Footer Right', 'unodepiera' ),
+				'id'            => 'sidebar-footer-right',
+				'description'   => __( 'Widgets para el footer', 'unodepiera' ),
+				'class'         => '',
+				'before_widget' => '<li id="%1" class="widget %2">',
+				'after_widget'  => '</li>',
+				'before_title'  => '<h2 class="widgettitle">',
+				'after_title'   => '</h2>'
+			)); 
+	}
+	add_action( 'widgets_init', 'unodepiera_add_widgets_footer');
+}
