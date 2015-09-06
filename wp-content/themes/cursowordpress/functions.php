@@ -72,8 +72,8 @@ if (!function_exists('unodepiera_add_widgets_footer'))
 				'id'            => 'sidebar-footer-left',
 				'description'   => __( 'Widgets para el footer', 'unodepiera' ),
 				'class'         => '',
-				'before_widget' => '<li id="%1" class="widget %2">',
-				'after_widget'  => '</li>',
+				'before_widget' => '<div id="%1" class="widget %2">',
+				'after_widget'  => '</div>',
 				'before_title'  => '<h2 class="widgettitle">',
 				'after_title'   => '</h2>'
 			);
@@ -85,8 +85,8 @@ if (!function_exists('unodepiera_add_widgets_footer'))
 				'id'            => 'sidebar-footer-center',
 				'description'   => __( 'Widgets para el footer', 'unodepiera' ),
 				'class'         => '',
-				'before_widget' => '<li id="%1" class="widget %2">',
-				'after_widget'  => '</li>',
+				'before_widget' => '<div id="%1" class="widget %2">',
+				'after_widget'  => '</div>',
 				'before_title'  => '<h2 class="widgettitle">',
 				'after_title'   => '</h2>'
 			)); 
@@ -96,8 +96,8 @@ if (!function_exists('unodepiera_add_widgets_footer'))
 				'id'            => 'sidebar-footer-right',
 				'description'   => __( 'Widgets para el footer', 'unodepiera' ),
 				'class'         => '',
-				'before_widget' => '<li id="%1" class="widget %2">',
-				'after_widget'  => '</li>',
+				'before_widget' => '<div id="%1" class="widget %2">',
+				'after_widget'  => '</div>',
 				'before_title'  => '<h2 class="widgettitle">',
 				'after_title'   => '</h2>'
 			)); 
