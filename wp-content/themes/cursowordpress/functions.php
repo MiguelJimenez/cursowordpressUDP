@@ -25,3 +25,11 @@ if(!function_exists("unodepiera_styles"))
 	}
 	add_action( 'wp_enqueue_scripts', 'unodepiera_styles');
 }
+
+// Utilizamos el archivo navwalker wp_bootstrap_navwalker.php
+require_once('navwalker/wp_bootstrap_navwalker.php');
+
+// Registrar la navegación
+register_nav_menus(array(
+	'primary'	=> __( 'Primary Menu', 'unodepiera' )
+) );
