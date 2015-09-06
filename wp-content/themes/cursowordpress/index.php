@@ -27,5 +27,8 @@
 	<?php _e( 'No hay nada que mostrar', 'unodepiera' ); ?>
 <?php endif; ?>
 </div>
+<div class="col-md-4 col-sm-12 col-xs-12">
+	<?php get_sidebar(); ?>
+</div>
 
 <?php get_footer(); ?>
