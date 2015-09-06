@@ -1,5 +1,29 @@
 <?php 
 
+// Nuestra función de configuración 'add_theme_support'
+if (!function_exists('unodepiera_setup'))
+{
+	function unodepiera_setup()
+	{
+		// Añadir imagen destacada
+		add_theme_support('post-thumbnails' );
+
+		// Soporte para el título - título de la pestaña de arriba
+		add_theme_support('title-tag' );
+
+		// Soporte para HTML5
+		$args = array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption'
+		);
+		add_theme_support('html5', $args );
+	}
+	add_action( 'after_setup_theme', 'unodepiera_setup');
+}
+
 // Añadir scripts
 if(!function_exists("unodepiera_scripts"))
 {
