@@ -8,7 +8,19 @@
 				<h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 			</div>
 			<div class="panel-body">
-				<div class="col-md-12 col-sm-12 col-xs-12">
+	
+				<?php 
+					if (has_post_thumbnail())
+					{
+					?>
+						<div class="col-md-4">
+							<?php the_post_thumbnail( 'thumbnail', array('class' => 'img-responsive') ); ?>
+						</div>
+					<?php 
+					}
+				?>
+
+				<div class="col-md-8 col-sm-12 col-xs-12">
 					<?php the_content( __('Seguir leyendo', 'unodepiera') ); ?>
 				</div>
 			</div>
