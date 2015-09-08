@@ -124,3 +124,5 @@ if (!function_exists('unodepiera_add_sidebar'))
 	}
 	add_action( 'widgets_init', 'unodepiera_add_sidebar');
 }
+
+require_once(trailingslashit( get_template_directory()).'includes/comments.php');
