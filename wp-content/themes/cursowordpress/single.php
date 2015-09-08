@@ -22,6 +22,13 @@
 		</div>
 
 	</article>
+
+	<hr>
+
+	<?php if (comments_open() || get_comments_number())
+	{
+		comments_template();
+	}?>
 <?php endwhile; ?>
 <!-- post navigation -->
 <?php else: ?>
