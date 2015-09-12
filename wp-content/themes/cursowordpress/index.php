@@ -34,15 +34,13 @@
 		</div>
 	<?php endwhile; ?>
 	<!-- post navigation -->
-
-	<?php the_posts_pagination(array(
-		'pre_text'				=> __( 'Página anterior', 'unodepiera' ),
-		'next_text'				=> __( 'Página siguiente', 'unodepiera' ),
-		'before_page_number'	=> '<span class="meta-nav screen-reader-text">'. __( 'Página', 'unodepiera' ).'</span>'
-	)); ?>
+	
+	<!-- template part paginación -->
+	<?php get_template_part( 'content', 'pagination' ); ?>
+	
 <?php else: ?>
 	<!-- no posts found -->
-	<?php _e( 'No hay nada que mostrar', 'unodepiera' ); ?>
+	<?php get_template_part("content", "empty"); ?>
 <?php endif; ?>
 
 
