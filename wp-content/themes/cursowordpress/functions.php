@@ -1,5 +1,8 @@
 <?php 
 
+// Definimos el directorio de nuestras imágenes
+define('IMAGE_DIRECTORY', get_template_directory_uri().'/imgs/');
+
 // Nuestra función de configuración 'add_theme_support'
 if (!function_exists('unodepiera_setup'))
 {

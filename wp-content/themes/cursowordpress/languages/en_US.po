@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Curso wordpress\n"
+"POT-Creation-Date: 2015-07-18 11:57+0200\n"
+"PO-Revision-Date: 2015-07-18 11:59+0200\n"
+"Last-Translator: \n"
+"Language-Team: Curso unodepiera wordpress\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive-products.php:53 home.php:30 search-products.php:49
+msgid "Leer artículo completo..."
+msgstr ""
+
+#: archive-products.php:60 search-products.php:56 single-products.php:23
+msgid "Precio"
+msgstr "Price"
+
+#: archive.php:42 index.php:32 search.php:42
+msgid "Seguir leyendo"
+msgstr ""
+
+#: content-empty-search.php:4
+#, php-format
+msgid "No se ha encontrado nada para la búsqueda : %s"
+msgstr ""
+
+#: content-empty.php:3
+msgid "No se ha encontrado nada"
+msgstr ""
+
+#: content-pagination.php:3
+msgid "Página anterior"
+msgstr ""
+
+#: content-pagination.php:4
+msgid "Página siguiente"
+msgstr ""
+
+#: content-pagination.php:5
+msgid "Página"
+msgstr ""
+
+#: form-products.php:4 functions.php:119
+msgid "Buscar para"
+msgstr ""
+
+#: functions.php:57
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:65
+msgid "Footer Left"
+msgstr ""
+
+#: functions.php:67 functions.php:77 functions.php:87
+msgid "Widgets para el footer."
+msgstr ""
+
+#: functions.php:75
+msgid "Footer Center"
+msgstr ""
+
+#: functions.php:85
+msgid "Footer Right"
+msgstr ""
+
+#: functions.php:102
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:104
+msgid "Sidebar de las páginas principales"
+msgstr ""
+
+#: includes/comments.php:11
+msgid "Name"
+msgstr ""
+
+#: includes/comments.php:15
+msgid "Email"
+msgstr ""
+
+#: includes/comments.php:19
+msgid "Website"
+msgstr ""
+
+#: includes/comments.php:33
+msgid "Deja un comentario positivo"
+msgstr ""
+
+#: includes/comments.php:37
+msgid "Comentario"
+msgstr ""
+
+#: includes/comments.php:41
+msgid "Envia tu comentario"
+msgstr ""
+
+#: includes/custom-post-type.php:9
+msgid "Productos"
+msgstr ""
+
+#: includes/custom-post-type.php:10
+msgid "Producto"
+msgstr ""
+
+#: includes/custom-post-type.php:11
+msgid "Añadir producto"
+msgstr ""
+
+#: includes/custom-post-type.php:45
+msgid "Marcas"
+msgstr ""
+
+#: includes/customizer.php:8
+msgid "Header"
+msgstr ""
+
+#: includes/customizer.php:9
+msgid "Opciones para el Header"
+msgstr ""
+
+#: includes/customizer.php:19
+msgid "Subir logo"
+msgstr ""
+
+#: includes/customizer.php:26
+msgid "Footer"
+msgstr ""
+
+#: includes/customizer.php:27
+msgid "Opciones para el footer"
+msgstr ""
+
+#: includes/customizer.php:37
+msgid "Texto copyright footer"
+msgstr ""
+
+#: includes/metaboxes-products.php:8
+msgid "Información adicional producto"
+msgstr ""
+
+#: index.php:38
+msgid "Autor"
+msgstr ""
+
+#: index.php:39
+msgid "Categorías"
+msgstr ""
+
+#: ratings.php:38
+msgid "Tu voto se ha guardado correctamente, gracias"
+msgstr ""
+
+#: ratings.php:49
+msgid "Ha ocurrido un error procesando la votación"
+msgstr ""
+
+#: search-products.php:15
+#, php-format
+msgid "Productos para la palabra: %s"
+msgstr ""
+
+#: search.php:14
+#, php-format
+msgid "Resultados de la búsqueda para : %s"
+msgstr ""
