@@ -34,10 +34,18 @@
 		</div>
 	<?php endwhile; ?>
 	<!-- post navigation -->
+
+	<?php the_posts_pagination(array(
+		'pre_text'				=> __( 'Página anterior', 'unodepiera' ),
+		'next_text'				=> __( 'Página siguiente', 'unodepiera' ),
+		'before_page_number'	=> '<span class="meta-nav screen-reader-text">'. __( 'Página', 'unodepiera' ).'</span>'
+	)); ?>
 <?php else: ?>
 	<!-- no posts found -->
 	<?php _e( 'No hay nada que mostrar', 'unodepiera' ); ?>
 <?php endif; ?>
+
+
 </div>
 <div class="col-md-4 col-sm-12 col-xs-12">
 	<?php get_sidebar(); ?>
