@@ -3,9 +3,10 @@
 	<h3 class="text-muted">
 		Algún error ha ocurrido para que hayas llegado hasta aquí
 	</h3>
+	<?php echo do_shortcode('[unodepiera_404]' ); ?>
 </div>
 <div class="col-md-4 col-sm-12 col-xs-12">
-	<?php get_sidebar( ); ?>
+	<?php get_sidebar(); ?>
 </div>
 
 

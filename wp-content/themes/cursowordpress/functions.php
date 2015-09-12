@@ -148,3 +148,19 @@ if (!function_exists('unodepiera_add_widgets_footer'))
 		}
 		add_filter( 'get_search_form', 'unodepiera_search_form' );
 	}
+
+// Para ingresar un shortcode
+/* Podemos usar el shortcode en el backend de WP con [unodepiera_404]
+O también dentro del código con:
+ echo do_shortcode('[unodepiera_404]');
+*/
+if (!function_exists('unodepiera_404_shortcode'))
+{
+	function unodepiera_404_shortcode($args)
+	{
+		return "<img src='".IMAGE_DIRECTORY."404.jpg' class='img-respinsive'>";
+	}
+	add_shortcode( 'unodepiera_404', 'unodepiera_404_shortcode' );
+}
+
+
