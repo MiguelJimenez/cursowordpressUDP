@@ -164,3 +164,5 @@ if (!function_exists('unodepiera_404_shortcode'))
 }
 
 
+// CUSTOM OPTIONS THEME
+require_once(trailingslashit( get_template_directory()).'includes/customizer.php');
