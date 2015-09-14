@@ -20,7 +20,24 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="<?php echo home_url(); ?>">
-					<?php bloginfo('name'); ?>
+					<?php
+						$options = get_theme_mod('unodepiera_options_theme' );
+						$logo = $options['logo'];
+						if ($logo)
+						{
+							?>
+								<img src="<?php echo $logo ?>" alt="<?php bloginfo('name' ); ?>" width="50" heigth="50" style="margin-top: -15px">
+							<?php 
+						}
+						else
+						{
+							bloginfo('name' );
+						}
+
+						
+
+
+					?>
 				</a>
 			</div>
 
