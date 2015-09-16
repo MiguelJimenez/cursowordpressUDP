@@ -33,8 +33,16 @@ if(!function_exists("unodepiera_scripts"))
 	function unodepiera_scripts()
 	{
 		wp_enqueue_script( 'bootstrap-js', '//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js', array('jquery'), true);
-		wp_register_script( 'functions', get_template_directory_uri().'js/functions.js', array('jquery'));
+		wp_register_script( 'functions', get_template_directory_uri().'/js/functions.js', array('jquery'));
 		wp_enqueue_script('functions' );
+
+		// Para añadir AJAX
+		global $wp_query;
+
+		wp_localize_script( 'functions', 'ratings', array(
+			'ajax_url'	=> admin_url('admin-ajax.php' ),
+			'post_id' 	=> $wp_query->post->ID
+		));
 
 	}
 	add_action( 'wp_enqueue_scripts', 'unodepiera_scripts');
