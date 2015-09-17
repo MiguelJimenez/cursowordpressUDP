@@ -1,10 +1,26 @@
-#footer
-{
-	height: 60px;
-	background-color: #bf3e11;
+
+#footer {
+  height: 60px;
+  background-color: #bf3e11;
 }
 
-#footer p
-{
-	padding-top: 20px;
+#footer p{
+    padding-top: 20px;
+}
+
+#rating-message, #rating-message-error{ display: none }
+.glyphicon { margin-right:5px;}
+.rating .glyphicon {font-size: 22px;}
+.rating-num { margin-top:0px;font-size: 54px; }
+.progress { margin-bottom: 20px;}
+.progress-bar { text-align: left; }
+.rating-desc .col-md-3 {padding-right: 0px;}
+.sr-only { margin-left: 5px;overflow: visible;clip: auto; }
+.rating-link{ cursor: pointer}
+
+#highlight{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
 }
