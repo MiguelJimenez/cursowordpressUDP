@@ -177,3 +177,6 @@ require_once(trailingslashit( get_template_directory()).'includes/customizer.php
 
 // RATING WEB
 require_once( trailingslashit( get_template_directory() )  . 'includes/rating.php');
+
+// CUSTOM POST TYPE PRODUCTS
+require_once( trailingslashit( get_template_directory() )  . 'includes/custom-post-type.php');
